@@ -46,7 +46,7 @@ class AddUserComponent extends Component {
         ApiService.addUser(user)
             .then(res => {
                 this.setState({ message: user.username + '님이 성공적으로 등록 되었습니다.' })
-                console.log(this.state.message);
+                // console.log(this.state.message);
                 this.props.history.push('/users');
             })
             .catch(err => {
